@@ -21,7 +21,7 @@ notebookfiles = let
         end
     end...)
     filter(jlfiles) do f
-        !occursin(".julia/packages/Pluto/", f) &&
+        !occursin(".julia", f) &&
         readline(f) == "### A Pluto.jl notebook ###"
     end
 end
